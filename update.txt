@@ -1,0 +1,6 @@
+in my appoinments there should be unique like one users can book multiple servies in one day but can not have duplicate appoinments.... 
+should show avilable date and time 
+can placed the location as well...
+
+
+convert images and assets in webp fromat
