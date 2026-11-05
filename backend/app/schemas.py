@@ -56,7 +56,7 @@ class ServiceBase(BaseModel):
 
 
 class ServiceCreate(ServiceBase):
-    pass
+    is_active: bool = True
 
 
 class ServiceUpdate(BaseModel):

@@ -3,7 +3,6 @@ import os
 # Settings must exist before the app is imported. Tests use an in-memory SQLite DB.
 os.environ["DATABASE_URL"] = "sqlite://"
 os.environ["SECRET_KEY"] = "test-secret-key-for-pytest-only-0123456789"
-os.environ["RESEND_API_KEY"] = ""
 os.environ["TURNSTILE_SECRET_KEY"] = ""
 os.environ["ADMIN_NOTIFY_EMAIL"] = "owner@example.com"
 

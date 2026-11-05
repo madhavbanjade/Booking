@@ -19,9 +19,13 @@ class Settings(BaseSettings):
     cookie_secure: bool = False  # set to true in production (HTTPS only)
     cookie_samesite: Literal["lax", "strict", "none"] = "lax"
 
-    # Email (Resend). If the key is empty, emails are printed in the terminal.
-    resend_api_key: str | None = None
-    email_from: str = "Booking <onboarding@resend.dev>"
+    # Gmail SMTP (leave credentials empty in development to print messages locally).
+    smtp_host: str = "smtp.gmail.com"
+    smtp_port: int = 587
+    smtp_username: str | None = None
+    smtp_password: str | None = None
+    smtp_from_email: str | None = None
+    smtp_from_name: str = "BuildCo"
     admin_notify_email: str | None = None
 
     # Cloudflare Turnstile. If the key is empty, the captcha check is skipped.
