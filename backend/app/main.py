@@ -7,7 +7,7 @@ from app.config import settings
 from app.database import get_db
 from app.routers import appointments, auth, services, uploads
 
-# 
+#  ouigiugiufqiguyg
 app = FastAPI(title="Booking API")
 
 app.add_middleware(
